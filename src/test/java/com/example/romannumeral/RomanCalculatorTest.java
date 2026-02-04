@@ -33,5 +33,16 @@ public class RomanCalculatorTest {
         Assertions.assertEquals("II", result);
     }
 
+    @Test
+    void it_translate_3_to_III() {
+        String result = calculator.translate(3);
 
+        Assertions.assertEquals("III", result);
+    }
+    @Test
+    void it_translate_4_to_IV() {
+        String result = calculator.translate(4);
+
+        Assertions.assertEquals("IV", result);
+    }
 }
